@@ -6,26 +6,26 @@ import java.util.stream.Collectors;
 public class Main
 {
     public static void main(String[] args) {
-        //System.out.println("Enter one of values " + Arrays.asList(Car.values()).stream().map(Car::name).collect(Collectors.toList()));
-        //Scanner scanner = new Scanner(System.in);
-        //Car car = Car.valueOf(scanner.nextLine());
-        //System.out.println(car);
-//
-        //switch (car) {
-        //    case MERCEDES_BENZ:
-        //        System.out.println("Process MERCEDES");
-        //        break;
-        //    case BMW:
-        //        System.out.println("Process BMW");
-        //        break;
-        //    case RENO:
-        //        System.out.println("Process RENO");
-        //        break;
-        //    default:
-        //        System.out.println("Default");
-        //}
+        System.out.println("Enter one of values " + Arrays.asList(Car.values()).stream().map(Car::name).collect(Collectors.toList()));
+        Scanner scanner = new Scanner(System.in);
+        Car car = Car.valueOf(scanner.nextLine());
+        System.out.println(car);
 
-        //printEvenChars(new String[] {"мама", "тато", "їж їжак желе", "івавіавіав", "папа"});
+        switch (car) {
+            case MERCEDES_BENZ:
+                System.out.println("Process MERCEDES");
+                break;
+            case BMW:
+                System.out.println("Process BMW");
+                break;
+            case RENO:
+                System.out.println("Process RENO");
+                break;
+            default:
+                System.out.println("Default");
+        }
+
+        printEvenChars(new String[] {"мама", "тато", "їж їжак желе", "івавіавіав", "папа"});
 
         String someValue = "Hello from Java application";
 
